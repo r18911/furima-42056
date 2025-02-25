@@ -11,7 +11,7 @@
 | first_name         | string | null: false |
 | last_name_kana     | string | null: false |
 | first_name_kana    | string | null: false |
-| birth_date         | string | null: false |
+| birth_date         | date   | null: false |
 
 ### Association
 
@@ -36,7 +36,7 @@
 ### Association
 
 - belongs_to :user
-- has_one :orders
+- has_one :order
 
 
 ## orders テーブル(購入記録)
