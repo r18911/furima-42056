@@ -36,7 +36,7 @@
 ### Association
 
 - belongs_to :user
-- has_many :orders
+- has_one :orders
 
 
 ## orders テーブル(購入記録)
