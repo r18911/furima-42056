@@ -53,8 +53,8 @@ class ItemsController < ApplicationController
   end
 
   def move_to_index
-    unless user_signed_in? && current_user == @item.user
-      redirect_to action: :index
+    if current_user != @item.user || @item.order.present?
+      redirect_to root_path
     end
   end
 
